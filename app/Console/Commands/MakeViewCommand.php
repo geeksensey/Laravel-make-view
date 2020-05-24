@@ -64,7 +64,7 @@ class MakeViewCommand extends Command
      */
     public function viewPath($view)
     {
-        $view = str_replace('.', '/', $view) . '.blade.php';
+        $view = $view . '.blade.php';
 
         $path = "resources/views/{$view}";
 
